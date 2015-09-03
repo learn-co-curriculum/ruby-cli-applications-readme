@@ -1,18 +1,35 @@
 # Building CLI Applications in Ruby
 
+## Overview
+
+Command Line Applications (aka CLI applications or simply CLIs - for Command Line Interface) are programs that you interact with entirely through your terminal and shell. They have no graphics or visual interface beyond what you see in your terminal after you run the program. They don't have drop-down navigations for you to browse or anything at all for you to click on. They can only communicate to the user through ASCII output and only accept input from the user via ASCII characters entered into a prompt.
+
+For example:
+
+*VIDEO*
+
+As you can see, a CLI application has a seemingly crude interface that implies limited potential and functionality for the end user. The truth is that CLI applications birthed the software revolution. Their simple interface and constrained features actually allowed people totally unfamiliar with computers or programming to interact with a machine. We wouldn't be where we are today without CLI applications.
+
+In fact, as a developer, some of the most powerful tools you use are CLI applications. `git` is a CLI application. `learn` is a CLI application. The `ruby` interpreter is presented as a CLI application and interface.
+
+Get excited about building CLI applications. They seem trivial and probably won't impress your friends, but they are the foundations of software and your first step in your journey to change the world through code.
+
 ## Objectives
 
-1. Objective 1
-2. Objective 2
+1. Understand the Structure of a CLI Application
+2. Run a CLI Application
+3. Understand the CLI User Interface
+4. Accept input from the user.
+5. Use the input within your program.
 
-## Instructions
+## CLI File Structure
 
-Create make the tests pass Heroku lab. API Nokogiri guest speaker belongs_to RESTful binder.ply. Url Rails slack it to me. Asset pipeline Feelings Friday puts "woof" API open source.
 
-Destroy now we can teach dogs to do anything link drop tables lab The Gucci bundle install. Associations def iterate infobesity Twitter. Undefined local variable or method mass assignment Heroku Programmer of the Day Meetup fido.bark. Internet create. Ironboard The Gucci path stack undefined local variable or method truthy-ness. Sqlite3 scooter blog posts DRY The Gucci cat. Truthy-ness bundle.
 
-### Part 1: Do Some Stuff
+## Running CLI Applications
 
-## Resources
+## The CLI Interface
 
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
+## User input via `gets`
+
+## A Complete CLI Application

@@ -1,19 +1,5 @@
 # Building CLI Applications in Ruby
 
-## Overview
-
-Command Line Applications (aka CLI applications or simply CLIs - for Command Line Interface) are programs that you interact with entirely through your terminal and shell. They have no graphics or visual interface beyond what you see in your terminal after you run the program. They don't have drop-down navigations for you to browse or anything at all for you to click on. They can only communicate to the user through ASCII output and only accept input from the user via ASCII characters entered into a prompt.
-
-For example:
-
-*VIDEO*
-
-As you can see, a CLI application has a seemingly crude interface that implies limited potential and functionality for the end user. The truth is that CLI applications birthed the software revolution. Their simple interface and constrained features actually allowed people totally unfamiliar with computers or programming to interact with a machine. We wouldn't be where we are today without CLI applications.
-
-In fact, as a developer, some of the most powerful tools you use are CLI applications. `git` is a CLI application. `learn` is a CLI application. The `ruby` interpreter is presented as a CLI application and interface.
-
-Get excited about building CLI applications. They seem trivial and probably won't impress your friends, but they are the foundations of software and your first step in your journey to change the world through code.
-
 ## Objectives
 
 1. Understand the Structure of a CLI Application
@@ -24,9 +10,60 @@ Get excited about building CLI applications. They seem trivial and probably won'
 
 ## CLI File Structure
 
+As our applications increase in complexity we'll have to keep our project files well organized. There's a pretty standard convention for where to put code in a project based on what the code does.
 
+We're going to learn a simplified pattern for organizing code in a ruby application. We'll build on this structure.
+
+
+### A Simple Ruby CLI Application
+
+From the root directory of a ruby applications, you should see a folder structure similar to the following:
+
+```
+├── bin
+│   └── tictactoe
+├── config
+│   └── environment.rb
+├── lib
+│   └── tic_tac_toe.rb
+└── spec
+    ├── tic_tac_toe_spec.rb
+    └── spec_helper.rb
+```
+
+You might not have all those folders or those exact files, but you'll have a similar structure. You'll see top-level directories (the top most folders within your project) such as: `bin`, `lib`, `config`, `spec` and sometimes `app`. You'll also might see some top-level files (files located directly within your project) such as: `.learn`, `.rspec`, `Gemfile`, or `Rakefile`.
+
+`cd` into the directory of a lab you recently solved in terminal. Within that directory type `ls -lah` to list all the files in the current directory, including hidden files, in a human order. You should see something similar.
+
+*Mac OS X ONLY**
+
+From within a project directory in terminal, type `open .` to open the project folder graphically in Finder.
+
+Let's talk about what kind of code goes where.
+
+#### `bin/`
+
+Executables
+
+#### `config/`
+
+Environment
+
+#### `lib/` (`app/`)
+
+Code
+
+#### `spec/`
+
+Tests
+
+#### `.rspec`, `.learn`, `Gemfile`, `Gemfile.lock`, `Rakefile`
+
+Developer tools
 
 ## Running CLI Applications
+
+
 
 ## The CLI Interface
 

@@ -10,7 +10,7 @@
 
 As our applications increase in complexity we'll have to keep our project files well organized. There's a pretty standard convention for where to put code in a project based on what the code does.
 
-We're going to learn a simplified pattern for organizing code in a ruby application. We'll build on this structure.
+We're going to learn a simplified pattern for organizing code in a Ruby application. We'll build on this structure.
 
 ### A Simple Ruby CLI Application
 

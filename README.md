@@ -14,7 +14,7 @@ We're going to learn a simplified pattern for organizing code in a Ruby applicat
 
 ### A Simple Ruby CLI Application
 
-From the root directory of a ruby applications, you should see a folder structure similar to the following:
+From the root directory of a Ruby applications, you should see a folder structure similar to the following:
 
 ```
 ├── bin
@@ -54,19 +54,21 @@ Within the `bin/` directory we generally put code that relates to running our ac
 
 A complex program might require 100s of individual files containing source code, method definitions, classes, and more that together constitute all the code required to run the application. We call this code the application's environment. We generally put all the code required to initialize the environment within `config/`. We might see that in an `config/environment.rb` file or even an entire `config/environments` directory.
 
-The `config/` directory is also used to setup different environments or configuration settings, like a database connection.
+What does it mean to "initialize a program's environment"? Establishing the environment for your program can involve a number of things, but on the most basic level, the config file or directory is responsible for things like file requirements (i.e. making sure your different files have access to one another), establishing connections to your database (if you have one) and ensuring that your test suite has access to the files that contain the code it is testing.
 
 #### `lib/` (`app/`)
 
-The `lib/` or Library directory in most ruby programs and the `app/` directory in Rails projects or complex ruby programs, is where the majority of our code lives. Within this directory are all the files that define what our program can do. All of the methods and classes our program needs are defined within the files in this directory. One file might define a group of methods that can search for a song by an artist, another file might define a group of methods that can search for a song by a genre. Together these methods might interact to create a Music Search application. We spend the majority of our time building code in this directory.
+The `lib/` or Library directory in most Ruby programs and the `app/` directory in Rails projects or complex Ruby programs, is where the majority of our code lives. Within this directory are all the files that define what our program can do. All of the methods and classes our program needs are defined within the files in this directory. One file might define a group of methods that can search for a song by an artist, another file might define a group of methods that can search for a song by a genre. Together these methods might interact to create a Music Search application. We spend the majority of our time building code in this directory.
 
 #### `spec/` (`test/`)
 
-Great developers write tests for their code. Whether through the practice of [Test-Driven Development](https://github.com/learn-co-curriculum/intro-to-tdd-rspec-and-learn/blob/master/README.md) or not, it's important to be able to write tests that make sure your code behaves as expected. It's also crucial to be able to read tests and understand the requirements they define for your code. All of our tests go into `test/` or `spec/` directory.
+Great developers write tests for their code. Whether through the practice of [Test-Driven Development](https://github.com/learn-co-curriculum/intro-to-tdd-rspec-and-learn/blob/master/README.md) or not, it's important to be able to write tests that make sure your code behaves as expected. It's also crucial to be able to read tests and understand the requirements they define for your code. All of our tests go into the `test/` or `spec/` directory.
 
 #### `.rspec`, `.learn`, `Gemfile`, `Gemfile.lock`, `Rakefile`
 
-There are a collection of files in most ruby applications that provide tooling and support for your application. A common such file is `Gemfile`, used by [Bunlder](http://bundler.io/) to manage gem dependencies. Another is a `Rakefile` for defining application tasks. Don't worry too much about these files for now.
+There are a collection of files in most Ruby applications that provide tooling and support for your application. A common such file is `Gemfile`, used by [Bundler](http://bundler.io/) to manage gem dependencies. Another is a `Rakefile` for defining application tasks. Don't worry too much about these files for now.
+
+**Advanced:** A gem is a library of code that you can include in your Ruby program to lend it the capabilities of that library. 
 
 ## Running CLI Applications
 
@@ -84,7 +86,7 @@ Using the above setup, you can run your program by typing `ruby bin/< your file 
 
 Alternatively, you can execute your program by simply typing `./bin/< your file name >` into the command line, since the shebang line at the top of your executable file is already telling the shell to use Ruby to interpret the rest of the file. 
 
-Generally our executable file is responsible for running our program. That might include loading required libraries and starting off an exeuction flow, like telling ruby to start a game of Tic Tac Toe.
+Generally our executable file is responsible for running our program. That might include loading required libraries and starting off an execution flow, like telling Ruby to start a game of Tic Tac Toe.
 
 #### File Permissions and `chmod`
 
@@ -92,7 +94,7 @@ For security purposes, a shell environment, including BASH, running within your 
 
 When we execute code through the ruby interpreter with the `ruby` command, your shell or terminal has already given the `ruby` command permission to execute code.
 
-But in order for your shell to execute a file natively, you have to grant it execute permissions. We do this using the `chmod` command. You can grant a file execute permissions with:
+But in order for your shell to execute a file via a command like `ruby bin/<file name>`, you have to grant it execute permissions. We do this using the `chmod` command. You can grant a file execute permissions with:
 
 ```
 $ chmod +x <file_name>
@@ -180,9 +182,9 @@ Please select a square by entering 1-9, 1 for the top left and 9 for the bottom 
 
 That is a simple CLI interface pattern. Whenever you ask the user for input, you will need to:
 
-1. Prompting the user for input: `Would you like to play? (Y/n)`
-2. Defining the input interface: `Please select a square by entering 1-9, 1 for the top left and 9 for the bottom right:`
-3. Accepting user input by yielding to a prompt and waiting patiently for the user to press enter. *If the user never enters anything, the program will wait at this state forever until the process is otherwise terminated.*
-4. Taking the user input and executing the appropriate sub-routine or procedure that represents that feature..
+1. Prompt the user for input: `Would you like to play? (Y/n)`
+2. Define the input interface: `Please select a square by entering 1-9, 1 for the top left and 9 for the bottom right:`
+3. Accept user input by yielding to a prompt and waiting patiently for the user to press enter. *If the user never enters anything, the program will wait at this state forever until the process is otherwise terminated.*
+4. Take the user input and executing the appropriate sub-routine or procedure that represents that feature.
 
-Another pattern is providing your CLI with a [main program loop](https://github.com/learn-co-curriculum/cli-interfaces-readme#program-loop) so that it can provide a bigger set of menus and features.
+Another pattern is to provide your CLI with a [main program loop](https://github.com/learn-co-curriculum/cli-interfaces-readme#program-loop) so that it can provide a bigger set of menus and features.

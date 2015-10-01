@@ -185,6 +185,6 @@ That is a simple CLI interface pattern. Whenever you ask the user for input, you
 1. Prompt the user for input: `Would you like to play? (Y/n)`
 2. Define the input interface: `Please select a square by entering 1-9, 1 for the top left and 9 for the bottom right:`
 3. Accept user input by yielding to a prompt and waiting patiently for the user to press enter. *If the user never enters anything, the program will wait at this state forever until the process is otherwise terminated.*
-4. Take the user input and executing the appropriate sub-routine or procedure that represents that feature.
+4. Take the user input and execute the appropriate sub-routine or procedure that represents that feature.
 
 Another pattern is to provide your CLI with a [main program loop](https://github.com/learn-co-curriculum/cli-interfaces-readme#program-loop) so that it can provide a bigger set of menus and features.

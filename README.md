@@ -30,19 +30,15 @@ From the root directory of a Ruby applications, you should see a folder structur
 ├── ttt.rb    
 ```
 
-You might not have all those folders or those exact files, but you'll have a similar structure. 
+You might not have all those folders or those exact files, but you'll have a similar structure.
 
-You'll see top-level directories (the top most folders within your project) such as: `bin`, `lib`, `config`, `spec` and sometimes `app`. 
+You'll see top-level directories (the top most folders within your project) such as: `bin`, `lib`, `config`, `spec` and sometimes `app`.
 
 You'll also might see some top-level files (files located directly within your project) such as: `.learn`, `.rspec`, `Gemfile`, or `Rakefile`. On some labs you might see an actual program file on the top level, like `ttt.rb`.
 
 We try to always tell you where the files you need to read or edit are located in a particular lab. This is just *in general*.
 
 `cd` into the directory of a lab you recently solved in terminal. Within that directory type `ls -lah` to list all the files in the current directory, including hidden files, in a human order. You should see something similar.
-
-*Mac OS X ONLY*
-
-From within a project directory in terminal, type `open .` to open the project folder graphically in Finder.
 
 Let's talk about what kind of code goes where.
 
@@ -74,17 +70,17 @@ There are a collection of files in most Ruby applications that provide tooling a
 
 In order to run our program from the command line and allow our user to interact with our program as described above, we need to set up a few things.
 
-First, your program needs a `bin` directory. "Bin" is short for "binary" and is just another way to refer to executable files. Accordingly, your executable files belong in this directory. 
+First, your program needs a `bin` directory. "Bin" is short for "binary" and is just another way to refer to executable files. Accordingly, your executable files belong in this directory.
 
-**Executable files** are any files that contain instructions in a form that a computer's operating system or application can understand and follow. Any executable files we place in our bin directory need to begin with the following line: 
+**Executable files** are any files that contain instructions in a form that a computer's operating system or application can understand and follow. Any executable files we place in our bin directory need to begin with the following line:
 
 `#!/usr/bin/env ruby`
 
-This is often referred to as a "shebang line" and it tells the shell which interpreter to use to execute the remainder of the file. 
+This is often referred to as a "shebang line" and it tells the shell which interpreter to use to execute the remainder of the file.
 
-Using the above setup, you can run your program by typing `ruby bin/< your file name >` into the command line. 
+Using the above setup, you can run your program by typing `ruby bin/< your file name >` into the command line.
 
-Alternatively, you can execute your program by simply typing `./bin/< your file name >` into the command line, since the shebang line at the top of your executable file is already telling the shell to use Ruby to interpret the rest of the file. 
+Alternatively, you can execute your program by simply typing `./bin/< your file name >` into the command line, since the shebang line at the top of your executable file is already telling the shell to use Ruby to interpret the rest of the file.
 
 Generally our executable file is responsible for running our program. That might include loading required libraries and starting off an execution flow, like telling Ruby to start a game of Tic Tac Toe.
 
@@ -121,7 +117,7 @@ Hi! Welcome to Command Line Tic Tac Toe! Would you like to play? (Y/n)
 
 ```
 
-The CLI will prompt the user for input and will hang until the user types something and presses enter. The CLI generally gives instructions for the expected input at a given prompt. In the example above, the greeting ends by asking the user if they would like to play. 
+The CLI will prompt the user for input and will hang until the user types something and presses enter. The CLI generally gives instructions for the expected input at a given prompt. In the example above, the greeting ends by asking the user if they would like to play.
 
 ### User Input
 

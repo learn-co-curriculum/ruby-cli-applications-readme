@@ -44,7 +44,7 @@ Let's talk about what kind of code goes where.
 
 #### `bin/`
 
-Within the `bin/` directory we generally put code that relates to running our actual program. Our executable files that we put in bin are described below, [running CLI applications](#running-cli-applications)
+Within the `bin/` directory we generally put code that relates to running our actual program. Our executable files that we put in bin are described below, [running CLI applications](#running-cli-applications).
 
 #### `config/`
 

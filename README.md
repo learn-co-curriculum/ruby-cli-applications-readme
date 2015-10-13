@@ -14,7 +14,7 @@ We're going to learn a simplified pattern for organizing code in a Ruby applicat
 
 ### A Simple Ruby CLI Application
 
-From the root directory of a Ruby applications, you should see a folder structure similar to the following:
+From the root directory of a Ruby application, you should see a folder structure similar to the following:
 
 ```
 ├── bin

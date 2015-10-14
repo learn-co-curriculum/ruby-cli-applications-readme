@@ -34,7 +34,7 @@ You might not have all those folders or those exact files, but you'll have a sim
 
 You'll see top-level directories (the top most folders within your project) such as: `bin`, `lib`, `config`, `spec` and sometimes `app`.
 
-You'll also might see some top-level files (files located directly within your project) such as: `.learn`, `.rspec`, `Gemfile`, or `Rakefile`. On some labs you might see an actual program file on the top level, like `ttt.rb`.
+You also might see some top-level files (files located directly within your project) such as: `.learn`, `.rspec`, `Gemfile`, or `Rakefile`. On some labs you might see an actual program file on the top level, like `ttt.rb`.
 
 We try to always tell you where the files you need to read or edit are located in a particular lab. This is just *in general*.
 

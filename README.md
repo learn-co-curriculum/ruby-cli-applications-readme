@@ -90,7 +90,7 @@ For security purposes, a shell environment, including BASH, running within your 
 
 When we execute code through the ruby interpreter with the `ruby` command, your shell or terminal has already given the `ruby` command permission to execute code.
 
-But in order for your shell to execute a file via a command like `ruby bin/<file name>`, you have to grant it execute permissions. We do this using the `chmod` command. You can grant a file execute permissions with:
+But in order for your shell to execute a file via a command like `./bin/<file name>`, you have to grant it execute permissions. We do this using the `chmod` command. You can grant a file execute permissions with:
 
 ```
 $ chmod +x <file_name>

@@ -100,6 +100,8 @@ So to grant a file `bin/tictactoe` permissions to execute, you would run: `chmod
 
 All the files provided by Learn already have the correct permissions and this should never cause you a problem. But in the event you need to ever create your own executable, we thought we'd tell you.
 
+> "Sudo" stands for "Super User do." Be careful when you use Sudo, because you're basically telling your computer to ignore all the safety procedures and precautions it normally takes, since you're a super user. You're telling it that you know what you're doing. So make sure that's true.
+
 ## The CLI Interface
 
 CLI Applications generally follow a similar interface or user experience pattern. Imagine a CLI version of Tic Tac Toe. From a player's perspective, they would start the game by executing the `bin` for the game.

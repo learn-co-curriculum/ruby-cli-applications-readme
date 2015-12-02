@@ -184,3 +184,5 @@ That is a simple CLI interface pattern. Whenever you ask the user for input, you
 4. Take the user input and execute the appropriate sub-routine or procedure that represents that feature.
 
 Another pattern is to provide your CLI with a [main program loop](https://github.com/learn-co-curriculum/cli-interfaces-readme#program-loop) so that it can provide a bigger set of menus and features.
+
+<a href='https://learn.co/lessons/ruby-cli-applications-readme' data-visibility='hidden'>View this lesson on Learn.co</a>

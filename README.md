@@ -185,4 +185,4 @@ That is a simple CLI interface pattern. Whenever you ask the user for input, you
 
 Another pattern is to provide your CLI with a [main program loop](https://github.com/learn-co-curriculum/cli-interfaces-readme#program-loop) so that it can provide a bigger set of menus and features.
 
-<a href='https://learn.co/lessons/ruby-cli-applications-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-cli-applications-readme' title='Building CLI Applications in Ruby'>Building CLI Applications in Ruby</a> on Learn.co and start learning to code for free.</p>

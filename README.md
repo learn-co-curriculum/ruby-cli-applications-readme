@@ -159,7 +159,7 @@ Great! Starting a new game...
 Please select a square by entering 1-9, 1 for the top left and 9 for the bottom right:
 5↵
 
- O |   |   
+   |   |   
 -----------
    | X |   
 -----------
@@ -168,11 +168,11 @@ Please select a square by entering 1-9, 1 for the top left and 9 for the bottom 
 Please select a square by entering 1-9, 1 for the top left and 9 for the bottom right:
 7↵
 
- O |   |   
+   |   |   
 -----------
    | X |   
 -----------
- X |   |   
+ O |   |   
 ```
 *Etc...*
 

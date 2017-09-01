@@ -38,7 +38,7 @@ You also might see some top-level files (files located directly within your proj
 
 We try to always tell you where the files you need to read or edit are located in a particular lab. This is just *in general*.
 
-`cd` into the directory of a lab you recently solved in terminal. Within that directory type `ls -lah` to list all the files in the current directory, including hidden files, in a human order. You should see something similar.
+`cd` into the directory of a lab you recently solved in terminal. Within that directory type `ls -lah` to list all the files in the current directory, including hidden files, in a human order. (If you're using IDE version 3, you'll want to click the open button on a previous lab). You should see something similar.
 
 Let's talk about what kind of code goes where.
 

@@ -62,7 +62,7 @@ Great developers write tests for their code. Whether through the practice of [Te
 
 #### `.rspec`, `.learn`, `Gemfile`, `Gemfile.lock`, `Rakefile`
 
-There are a collection of files in most Ruby applications that provide tooling and support for your application. A common such file is `Gemfile`, used by [Bundler](http://bundler.io/) to manage gem dependencies. Another is a `Rakefile` for defining application tasks. Don't worry too much about these files for now.
+There is a collection of files in most Ruby applications that provide tooling and support for your application. A common such file is `Gemfile`, used by [Bundler](http://bundler.io/) to manage gem dependencies. Another is a `Rakefile` for defining application tasks. Don't worry too much about these files for now.
 
 **Advanced:** A gem is a library of code that you can include in your Ruby program to lend it the capabilities of that library. 
 
@@ -185,4 +185,4 @@ That is a simple CLI interface pattern. Whenever you ask the user for input, you
 
 Another pattern is to provide your CLI with a [main program loop](https://github.com/learn-co-curriculum/cli-interfaces-readme#program-loop) so that it can provide a bigger set of menus and features.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-cli-applications-readme' title='Building CLI Applications in Ruby'>Building CLI Applications in Ruby</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/ruby-cli-applications-readme'>CLI Applications in Ruby</a> on Learn.co and start learning to code for free.</p>
